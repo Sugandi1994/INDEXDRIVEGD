@@ -219,7 +219,7 @@ function list(path) {
 	  </ul> 
 	  <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Total <span class="number"></span> items</div>
 	 </div>
-	 <div id="readme_md" class="mdui-typo" style="display:none; padding: 20px 0;"></div>
+ 	 /*<div id="readme_md" class="mdui-typo" style="display:none; padding: 20px 0;"></div>*/
 	`;
   $('#content').html(content);
 
