@@ -78,9 +78,9 @@ const authConfig = {
           user: "",
           pass: "",
           protect_file_link: false,
-          client_id: '',
-          client_secret: '',
-          refresh_token: ''
+          client_id: "",
+          client_secret: "",
+          refresh_token: ""
         },
         {
           id: "root",
