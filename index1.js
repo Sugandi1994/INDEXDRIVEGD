@@ -1,33 +1,34 @@
 // =======Options START=======
 const serviceaccounts = [
 {}
-];const randomserviceaccount = serviceaccounts[Math.floor(Math.random()*serviceaccounts.length)]; // DO NOT TOUCH THIS
-// const domains_for_dl = ['']; // add multiple cloudflare addresses to balance the load on download/stream servers, eg. ['https://testing.fetchgoogleapi.workers.dev', 'https://testing2.fetchgoogleapi2.workers.dev']
-// const domain_for_dl = domains_for_dl[Math.floor(Math.random()*domains_for_dl.length)]; // DO NOT TOUCH THIS
-// const video_domains_for_dl = ['']; // add multiple cloudflare addresses to balance the load on download/stream servers, eg. ['https://testing.fetchgoogleapi.workers.dev', 'https://testing2.fetchgoogleapi2.workers.dev']
-// const video_domain_for_dl = video_domains_for_dl[Math.floor(Math.random()*video_domains_for_dl.length)]; // DO NOT TOUCH THIS
-// const blocked_region = ['']; // add regional codes seperated by comma, eg. ['IN', 'US', 'PK']
-// const blocked_asn = []; // add ASN numbers from http://www.bgplookingglass.com/list-of-autonomous-system-numbers, eg. [16509, 12345]
+];
+const randomserviceaccount = serviceaccounts[Math.floor(Math.random()*serviceaccounts.length)]; // DO NOT TOUCH THIS
+const domains_for_dl = ['']; // add multiple cloudflare addresses to balance the load on download/stream servers, eg. ['https://testing.fetchgoogleapi.workers.dev', 'https://testing2.fetchgoogleapi2.workers.dev']
+const domain_for_dl = domains_for_dl[Math.floor(Math.random()*domains_for_dl.length)]; // DO NOT TOUCH THIS
+const video_domains_for_dl = ['']; // add multiple cloudflare addresses to balance the load on download/stream servers, eg. ['https://testing.fetchgoogleapi.workers.dev', 'https://testing2.fetchgoogleapi2.workers.dev']
+const video_domain_for_dl = video_domains_for_dl[Math.floor(Math.random()*video_domains_for_dl.length)]; // DO NOT TOUCH THIS
+const blocked_region = ['']; // add regional codes seperated by comma, eg. ['IN', 'US', 'PK']
+const blocked_asn = []; // add ASN numbers from http://www.bgplookingglass.com/list-of-autonomous-system-numbers, eg. [16509, 12345]
 const authConfig = {
-//     "siteName": "Drive Index", // Website name
-//     "client_id": "", // Client id from Google Cloud Console
-//     "client_secret": "", // Client Secret from Google Cloud Console
-//     "refresh_token": "", // Authorize token
-//     "service_account": false, // true if you're using Service Account instead of user account
-//     "service_account_json": randomserviceaccount, // don't touch this one
-//     "files_list_page_size": 50,
-//     "search_result_list_page_size": 50,
-//     "enable_cors_file_down": false,
-//     "enable_password_file_verify": true, // support for .password file
-//     "direct_link_protection": false, // protects direct links with Display UI
-//     "lock_folders": false, // keeps folders and search locked if auth in on, and allows individual file view
-//     "enable_auth0_com": false, // follow guide to add auth0.com to secure index with powerful login based system
-
-var authConfig = {
     "siteName": "Drive Index", // Website name
     "client_id": "", // Client id from Google Cloud Console
     "client_secret": "", // Client Secret from Google Cloud Console
     "refresh_token": "", // Authorize token
+    "service_account": false, // true if you're using Service Account instead of user account
+    "service_account_json": randomserviceaccount, // don't touch this one
+    "files_list_page_size": 50,
+    "search_result_list_page_size": 50,
+    "enable_cors_file_down": false,
+    "enable_password_file_verify": true, // support for .password file
+    "direct_link_protection": false, // protects direct links with Display UI
+    "lock_folders": false, // keeps folders and search locked if auth in on, and allows individual file view
+    "enable_auth0_com": false, // follow guide to add auth0.com to secure index with powerful login based system
+
+// var authConfig = {
+//     "siteName": "Drive Index", // Website name
+//     "client_id": "", // Client id from Google Cloud Console
+//     "client_secret": "", // Client Secret from Google Cloud Console
+//     "refresh_token": "", // Authorize token
     version: "1.1.2", // 程序版本
     theme: "acrou",
     // 强烈推荐使用自己的 client_id 和 client_secret
