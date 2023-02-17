@@ -25,7 +25,13 @@ const authConfig = {
     "enable_auth0_com": false, // follow guide to add auth0.com to secure index with powerful login based system
 
   roots: [
-        
+    {
+      id: "root",
+      name: "HOME",
+      user: "",
+      pass: "",
+      protect_file_link: true,
+    },     
     {
       id: "",
       name: "WALLPAPER HP",
