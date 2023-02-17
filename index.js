@@ -1,12 +1,12 @@
 // =======Options START=======
 var authConfig = {
-  siteName: "Share", // 网站名称
+  siteName: "Shared", // 网站名称
   version: "1.1.2", // 程序版本
   theme: "acrou",
   // 强烈推荐使用自己的 client_id 和 client_secret
-  client_id: "202264815644.apps.googleusercontent.com",
-  client_secret: "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
-  refresh_token: "1//0dVOUWENR1cZ3CgYIARAAGA0SNwF-L9IrAku8GLxx-9QCamMzRGEjhXVPgmFeG4WPr9llBSTLuJL9dpLtnH0fMRGJLqsdhyPodmc", // 授权 token
+  client_id: "",
+  client_secret: "",
+  refresh_token: "", // 授权 token
 
   roots: [
         
